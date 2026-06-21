@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:8080/api';
+const API_BASE ='http://rag-knowledge-bot-1.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE,
@@ -9,7 +9,7 @@ const api = axios.create({
   },
 });
 
-// Token automatically add karo har request mein
+
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
