@@ -137,7 +137,7 @@ export default function Chat({ user, onLogout, onAdmin }) {
         padding: "0 24px 12px",
         display: "flex", gap: "8px", flexWrap: "wrap"
       }}>
-        {["What is the leave policy?", "Tell me about WFH rules", "When is appraisal conducted?"].map(q => (
+        {["company policy"].map(q => (
           <button key={q} onClick={() => setQuestion(q)} style={{
             padding: "6px 14px", borderRadius: "20px",
             border: "1px solid #cbd5e1", background: "white",
